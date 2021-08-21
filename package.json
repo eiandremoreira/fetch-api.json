@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "node-fetch": "^2.6.1"
-  }
+  },
+  "name": "api-fetch",
+  "version": "1.0.0",
+  "description": "Um simples get para puxar dados json de uma api.",
+  "main": "src/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eiandremoreira/api-fetch.git"
+  },
+  "keywords": [
+    "node-fetch"
+  ],
+  "author": "eiandremoreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eiandremoreira/api-fetch/issues"
+  },
+  "homepage": "https://github.com/eiandremoreira/api-fetch#readme"
 }
