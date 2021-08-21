@@ -1,4 +1,4 @@
-## API-FETCH
+## fetch-api.json
 
 Um simples package feito com intuito ajudar iniciantes a dar fetch em apis que retornam json.
 
