@@ -1,11 +1,8 @@
-const f = require('node-fetch');
+const fetch = require('node-fetch');
 
-async function get (url) {
-
-	const request = await f(`${url}`);
-	const data = await request.json();
-	return data;
-
+async function get (url, parseAs = 'json', method) {
+	const request = await fetch(`${url}`, { method: method ?? 'GET' });
+	return request[parseAs]?.() ?? request[parseAs].json();
 }
 
 module.exports = {
