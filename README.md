@@ -2,7 +2,7 @@
 
 Um simples módulo feito com intuito ajudar iniciantes a fazer requisições em APIs e sites, sem complicações.
 
-Requer Node.js v14 ou uma vers
+Requer o [Node.js](https://nodejs.org/en/download/) versão equivalente ou superior à 14.0.0.
 
 ---
 
