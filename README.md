@@ -43,5 +43,5 @@ get('https://cdn.nekos.life/neko/neko230.jpg', 'buffer').then(data => console.lo
 - Requisição em um site que retorna JSON porém requer requisições POST
 ```javascript
 const { get } = require('api-fetch');
-get('https://example.org/', 'json', 'POST').then(data => console.log(data)) // PasteBin API Check
+get('https://example.org/', 'json', 'POST').then(data => console.log(data))
 ```
