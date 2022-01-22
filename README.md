@@ -9,9 +9,9 @@ Requer o [Node.js](https://nodejs.org/en/download/) versão equivalente ou super
 ## Instalação:
 
 ```shell
-npm install api-fetch
-yarn add api-fetch
-pnpm add api-fetch
+npm install fetch-api.json
+yarn add fetch-api.json
+pnpm add fetch-api.json
 ```
 
 ---
@@ -19,7 +19,7 @@ pnpm add api-fetch
 ### Exemplo:
 
 ```javascript
-const { get } = require('api-fetch');
+const { get } = require('fetch-api.json');
 get('https://nekos.life/api/v2/img/neko').then(data => console.log(data)) // {"url":"https://cdn.nekos.life/neko/neko230.jpg"}
 ```
 
@@ -29,19 +29,19 @@ get('https://nekos.life/api/v2/img/neko').then(data => console.log(data)) // {"u
 
 - Requisição em um site que retorna um texto ou obter o HTML de algum site.
 ```javascript
-const { get } = require('api-fetch');
+const { get } = require('fetch-api.json');
 get('https://pastebin.com/raw/iNau6zJZ', 'text').then(data => console.log(data)) // PasteBin API Check
 ```
 
 - Requisição em um site que retorna uma imagem
 ```javascript
-const { get } = require('api-fetch');
+const { get } = require('fetch-api.json');
 get('https://cdn.nekos.life/neko/neko230.jpg', 'buffer').then(data => console.log(data)) // < Buffer abcdef >
 ```
 
 
 - Requisição em um site que retorna JSON porém requer requisições POST
 ```javascript
-const { get } = require('api-fetch');
+const { get } = require('fetch-api.json');
 get('https://example.org/', 'json', 'POST').then(data => console.log(data))
 ```
