@@ -7,4 +7,4 @@ async function get (url, parseAs = 'json', method = 'GET') {
 	return request[parseAs]?.() ?? request.json();
 }
 
-exports = { get };
+module.exports = { get };
